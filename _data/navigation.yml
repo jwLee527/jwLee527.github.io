@@ -14,3 +14,15 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: Menu
+    children:
+      - title: "blog"
+        url: /docs/blog/
+      - title: "논문 정리"
+        url: /docs/paper-summary/
+      - title: "개발 정리"
+        url: /docs/coding-summary/
+      - title: "오류 정리"
+        url: /docs/error-summary/

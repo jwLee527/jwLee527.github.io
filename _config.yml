@@ -251,10 +251,10 @@ whitelist:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
@@ -282,13 +282,15 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: posts 
     values:
       show_date: true
       date_format: "%Y-%m-%d"
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: true
-      share: true
-      related: true
+      layout: single # single 레이아웃을 적용
+      author_profile: true # 내 프로필을 사이드바에 표시함
+      read_time: false # '한 포스트를 다 읽는데 n분 걸림' 이라는 문구를 붙여주는 완독 추측 시간
+      comments: true # 댓글 기능 활성화
+      share: true # 소셜 공유 활성화
+      related: true # 관련 포스트 추천 활성화
+      sidebar: # 블로그 목차 보기
+        nav: "docs"
