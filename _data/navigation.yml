@@ -20,6 +20,8 @@ docs:
     children:
       - title: "blog"
         url: /docs/blog/
+      - title: "개념 정리"
+        url: /docs/concept-summary/
       - title: "논문 정리"
         url: /docs/paper-summary/
       - title: "개발 정리"
